@@ -39,3 +39,15 @@ console.log(context);
 const { keyName, user: {name, age}, rank } = useContext( persona );
 
 console.log("El otro es " + keyName + ", " + name + ", " + age + ", " + rank);
+
+
+
+
+
+
+const { keyName: keyName2, user: user2, rank: rank2 } = useContext( persona );
+
+
+const { name: name2, age: age2 } = user2;
+
+console.log("El otro es " + keyName2 + ", " + name2 + ", " + age2 + ", " + rank2);
