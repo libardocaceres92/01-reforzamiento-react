@@ -17,3 +17,5 @@ myArray2.push(9);
 console.log('myArray2 ' + myArray2);
 
 console.log('La posicion 4 del myArray2 es = ' + myArray2.at(4));
+
+console.log('La posicion -1 del myArray2 es = ' + myArray2.at(-1));

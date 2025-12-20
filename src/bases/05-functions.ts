@@ -58,9 +58,14 @@ console.log('El uid del user2 es =' + user2.uid + ' y el username es = ' + user2
 
 
 
+
+
+
+
 interface User {
     uid:string,
     username:string
+    age:number
 }
 
 
@@ -68,6 +73,7 @@ interface User {
 const getUser3 = ():User=> ({
             uid: '12345',
             username: 'Andres',
+            age: 30,
     });    
 
 const user3 = getUser3();
