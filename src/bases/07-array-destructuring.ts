@@ -19,3 +19,19 @@ const returnArrayFn = (): [string, number] => {
 const [, numbers] = returnArrayFn();
 
 console.log( numbers + 100 );
+
+
+
+const useState = (name: string) => {
+    return [
+            name,
+            (newName:string) => {
+                console.log(newName)
+            }
+    ] as const;    
+}
+
+const [name, setName] = useState('Goku');
+console.log(name + " hola");       // Goku
+setName('Vegeta');       // Imprime "Vegeta"
+
