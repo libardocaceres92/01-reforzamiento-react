@@ -16,6 +16,6 @@ const returnArrayFn = (): [string, number] => {
     return ['ABC', 123] ;
 }
 
-const [letters, numbers] = returnArrayFn();
+const [, numbers] = returnArrayFn();
 
 console.log( numbers + 100 );
