@@ -1,0 +1,46 @@
+type OwnerType = 'DC' | 'Marvel';
+
+enum OwnerEnum {
+  DC = 'DC',
+  Marvel = 'Marvel',
+};
+
+
+interface Hero {
+  id: number;
+  name: string;
+  owner: OwnerEnum ;
+}
+
+const heroes: Hero[] = [
+  {
+    id: 1,
+    name: 'Batman',
+    owner: OwnerEnum.DC,
+  },
+  {
+    id: 2,
+    name: 'Spiderman',
+    owner: OwnerEnum.Marvel,
+  },
+  {
+    id: 3,
+    name: 'Superman',
+    owner: OwnerEnum.DC,
+  },
+  {
+    id: 4,
+    name: 'Flash',
+    owner: OwnerEnum.DC,
+  },
+  {
+    id: 5,
+    name: 'Wolverine',
+    owner: OwnerEnum.Marvel,
+  },
+  {
+    id: 6,
+    name: 'Wolverine',
+    owner: OwnerEnum.DC,
+  },
+];

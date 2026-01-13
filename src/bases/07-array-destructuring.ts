@@ -32,6 +32,6 @@ const useState = (name: string) => {
 }
 
 const [name, setName] = useState('Goku');
-console.log(name + " hola");       // Goku
-setName('Vegeta');       // Imprime "Vegeta"
+console.log(name + " hola");
+setName('Vegeta');
 
