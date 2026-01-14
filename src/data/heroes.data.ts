@@ -1,10 +1,9 @@
-type OwnerType = 'DC' | 'Marvel';
+type _OwnerType = 'DC' | 'Marvel';
 
 enum OwnerEnum {
   DC = 'DC',
   Marvel = 'Marvel',
-};
-
+}
 
 interface Hero {
   id: number;
@@ -12,7 +11,7 @@ interface Hero {
   owner: OwnerEnum ;
 }
 
-const heroes: Hero[] = [
+const _heroes: Hero[] = [
   {
     id: 1,
     name: 'Batman',
