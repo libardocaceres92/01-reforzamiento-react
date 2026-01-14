@@ -5,13 +5,13 @@ enum OwnerEnum {
   Marvel = 'Marvel',
 }
 
-interface Hero {
+export interface Hero {
   id: number;
   name: string;
   owner: OwnerEnum ;
 }
 
-const _heroes: Hero[] = [
+export const heroes: Hero[] = [
   {
     id: 1,
     name: 'Batman',
