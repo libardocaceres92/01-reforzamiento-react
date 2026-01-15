@@ -24,6 +24,9 @@ export const getHeroesByOwner = ( owner: OwnerEnum ): Hero[] => {
     return heroesByOwner;
 };
 
+
+
+
 const getValor = (valor1: number, valor2: number) : number => {
     return valor1 + valor2;  
 };
