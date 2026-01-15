@@ -1,6 +1,6 @@
 type _OwnerType = 'DC' | 'Marvel';
 
-enum OwnerEnum {
+export enum OwnerEnum {
   DC = 'DC',
   Marvel = 'Marvel',
 }
