@@ -1,15 +1,22 @@
+import type { GiphyRandomResonse , Gif} from "../data/giphy.response";
+
 const API_KEY = 'YZQinCoOKN9wZwRwtIPdIArwuU35sCST';
-const myReque = fetch(`https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}&tag=&rating=g`);
+const myRequest = fetch(`https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}&tag=&rating=g`);
 
-myReque
+const createImageInsideDOM = (url: string) => {
+  const imgElement = document.createElement('img');
+  imgElement.src = url;
+  document.body.appendChild(imgElement);
+}
+
+
+myRequest
   .then((response) => response.json())
-  .then((data) => {
-    const imgUrl = data.data.images.original.url;
-    console.log(imgUrl);
+  .then(({data}: GiphyRandomResonse) => {
 
-    const imgElement = document.createElement('img');
-    imgElement.src = imgUrl;
-    document.body.appendChild(imgElement);
+    const imageUrl = data.images.original.url;
+
+    createImageInsideDOM(imageUrl);
   })
   .catch((error) => {
     console.log('Error occurred:', error);

@@ -1,9 +1,9 @@
 export interface GiphyRandomResonse {
-    data: Data;
+    data: Gif;
     meta: Meta;
 }
 
-export interface Data {
+export interface Gif {
     type:                       string;
     id:                         string;
     url:                        string;
